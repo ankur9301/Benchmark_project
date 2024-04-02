@@ -10,6 +10,14 @@ int main() {
    
 
     // Placeholder for further operations...
+    for (long i = 0; i < 10000000000; i++) {
+        result = integerConstant + integerConstant;
+    }
+
+        for (long i = 0; i < 5000000000; i++) {
+        result = integerConstant * integerConstant;
+    }
+
 
     std::cout << "32_bit Integer Operation Time = ";
     // Placeholder for duration calculation and printing...
