@@ -14,9 +14,14 @@ int main() {
         result = integerConstant + integerConstant;
     }
 
-        for (long i = 0; i < 5000000000; i++) {
-        result = integerConstant * integerConstant;
-    }
+    for (long i = 0; i < 5000000000; i++) {
+    result = integerConstant * integerConstant;
+}
+
+    for (long i = 0; i < 2000000000; i++) {
+    result = integerConstant / integerConstant;
+}
+
 
 
     std::cout << "32_bit Integer Operation Time = ";
