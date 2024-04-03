@@ -21,13 +21,13 @@ int main() {
     result = floatingPointNumber / floatingPointNumber;
     }
 
-
     
-
-
-    
-
-    std::cout << "64_bit Floating Point Operations Time = ";
     // Placeholder for duration calculation and printing...
+
+    // Ending time
+    auto endTime = std::chrono::high_resolution_clock::now();
+    std::chrono::duration<double> duration = endTime - startTime;
+    std::cout << "64_bit Floating Point Operations Time = " << duration.count() << "seconds" << std::endl;
+
     return 0;
 }
