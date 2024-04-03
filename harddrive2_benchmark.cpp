@@ -22,6 +22,14 @@ int main() {
     // Close the file
     file.close();
 
+    // Opening the file for reading
+    file.open("driveBenchmark2.txt", std::ios::in | std::ios::binary);
+
+    while(file.read(buffer, bufferSize)) {}
+
+    file.close();
+
+
 
     std::cout << "Hard drive Benchmark 2 Time = ";
     // Placeholder for duration calculation and printing...
