@@ -31,7 +31,13 @@ int main() {
 
 
 
-    std::cout << "Hard drive Benchmark 2 Time = ";
+    
     // Placeholder for duration calculation and printing...
+
+    // Ending time
+    auto endTime = std::chrono::high_resolution_clock::now();
+    std::chrono::duration<double> duration = endTime - startTime;
+    std::cout << "Hard drive Benchmark 2 Time = " << duration.count() << "seconds" << std::endl;
+
     return 0;
 }
