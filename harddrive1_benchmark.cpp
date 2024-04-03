@@ -12,7 +12,16 @@ int main() {
         buffer[i] = inputChar;
     }
 
-    // Placeholder for writing operation...
+    // Starting time
+    auto startTime = std::chrono::high_resolution_clock::now();
+    for (long i = 0; i < 10000000; i++) {
+        file << buffer;
+    }
+    // Close the file
+    file.close();
+
+
+
 
     std::cout << "Hard drive Benchmark Time = ";
     // Placeholder for duration calculation and printing...
