@@ -20,6 +20,16 @@ int main() {
     // Close the file
     file.close();
 
+    // Opening the file for reading
+    file.open("driveBenchmark.txt", std::ios::in | std::ios::binary);
+
+    while(file.read(buffer, bufferSize)) {}
+
+    file.close();
+
+
+    
+
 
 
 
