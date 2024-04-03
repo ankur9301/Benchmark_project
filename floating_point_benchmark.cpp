@@ -13,6 +13,20 @@ int main() {
 
     // Placeholder for further operations...
 
+    for (long i = 0; i < 5000000000; i++) {
+    result = floatingPointNumber * floatingPointNumber;
+    }
+    
+    for (long i = 0; i < 2000000000; i++) {
+    result = floatingPointNumber / floatingPointNumber;
+    }
+
+
+    
+
+
+    
+
     std::cout << "64_bit Floating Point Operations Time = ";
     // Placeholder for duration calculation and printing...
     return 0;
